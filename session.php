@@ -12,4 +12,8 @@
     }
     $msg = "<p>Ban da truy cap ". $_SESSION['counter'] ." lan vao trang </p>";
     echo $msg;
+
+    //huy session
+    unset ($_SESSION['counter']);
+    session_destroy();
 ?>
